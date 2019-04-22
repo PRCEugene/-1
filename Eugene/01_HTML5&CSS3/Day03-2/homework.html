@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			.a1{
+				 font-size:35px;
+			}
+			.a2{
+				 color:red;
+			}
+			.b1,h4,em{
+					   color:blue;
+			}
+			.list dt{
+	   				   color:red;
+				       font-size:30px;
+			}
+			.list dd{
+	  				   color:blue; 
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+			1.练习表单
+			2.基本选择器
+			  (1)class选择器  给任意标记(h2,h3,p)添加
+			     class名称
+			     a1  属性 字大小35像素
+			     a2  属性   颜色 红色
+			  (2)群组选择器    给h4,em,class是b1选择器添加属性   字蓝色
+			  (3)后代选择器    给父元素dl 定义class名称 list 然后分别给dt 红色 大小30像素   dd 颜色蓝色
+			     <dl class="list">
+			     	<dt>apple</dt>
+			     	<dd>red</dd>
+			     	<dd>eat</dd>
+			     </dl>
+		 -->
+		 
+		 <h2 class="a1 a2">标题字</h2>
+		 <h2>标题字</h2>
+		 <h3 class="a1 a2">标题字</h3>
+		 <h3>标题字</h3>
+		 <p class="a1 a2">段落</p>
+		 <p>段落</p>
+		 <h4>标题字</h4>
+		 <h4>标题字</h4>
+		 <em>倾斜</em>
+		 <em>倾斜</em>
+		 <b class="b1">加粗</b>
+		 <dl class="list">
+			 <dt>apple</dt>
+	         <dd>red</dd>
+	         <dd>eat</dd>
+		 </dl>
+		 
+		 <dl class="list">
+			 <dt>apple</dt>
+	         <dd>red</dd>
+	         <dd>eat</dd>
+		 </dl>
+		 
+		 <dl class="list2">
+			 <dt>apple</dt>
+	         <dd>red</dd>
+	         <dd>eat</dd>
+		 </dl>
+	</body>
+</html>

@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+/* 头部样式  */
+.header{
+	width:1000px;
+	height:100px;
+	background:#f00;
+	margin:0 auto;
+}
+/* 版块1 */
+.c1{
+	width:1000px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.c1 .left{
+	float:left;
+	width:590px;
+	height:200px;
+	background:#f0f;
+}
+.c1 .right{
+	float:right;
+	width:400px;
+	height:200px;
+	background:#0ff;
+}
+/* 版块2 */
+.c2{
+	width:1000px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.c2 .left{
+	float:left;
+	width:290px;
+	height:200px;
+	background:#0f0;
+	margin-right:10px;
+}
+.c2 .right{
+	float:right;
+	width:400px;
+	height:200px;
+	background:#ff0;
+}
+/* 底部样式  */
+.footer{
+	width:1000px;
+	height:100px;
+	background:#000;
+	margin:0 auto;
+	margin-top:10px;
+}
+
+
+
+
+
+
+
+

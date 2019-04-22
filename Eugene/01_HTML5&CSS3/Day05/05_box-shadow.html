@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+              /* box1的内阴影和box2的外阴影对称与浏览器方向的坐标有关 */
+			.box1{
+				width:100px;
+				height:100px;
+				background:#ff0;
+				box-shadow:5px 5px 5px 1px #f00;
+			}
+			.box2{
+				width:100px;
+				height:100px;
+				background:#ff0;
+				box-shadow:5px 5px 5px 1px #f00 inset;
+			}
+			.box3{  /* 盒子的多种阴影效果，用逗号“，” 隔开*/
+				width:100px;
+				height:100px;
+				background:#333;
+				box-shadow:3px 3px 3px #0f0,
+				           -3px -3px 3px #00f,
+				          /* 0px 0px表示盒子的四个边都有阴影 */
+				           0px 0px 7px 6px #ff0 inset;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">块元素</div>
+		<div class="box2">块元素</div>
+		<hr/>
+		<div class="box3">块元素</div>
+	</body>
+</html>

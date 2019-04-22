@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+        	.list1 li:first-child{
+					   color:red;
+        	}
+			.list1 li:last-child{
+					   color:yellow;
+        	}
+			.list1 li:nth-child(2){
+					   color:purple;
+        	}
+			.list1 li:only-child{
+					   color:gray;
+        	}
+        	/* 
+            *   :first-of-type  父元素中首次出现的b标记
+            *   :first-child    父元素中第一个标记是b标记
+            */
+        	.box b:first-of-type{
+					   color:green;
+        	}
+		</style>
+	</head>
+	<body>
+		<ul class="list1">
+			<li>one</li>
+			<li>two</li>
+			<li>three</li>
+		</ul>
+		<ul class="list1">
+			<li>one</li>
+			<li>two</li>
+			<li>three</li>
+		</ul>
+		<ul class="list1">
+			<li>one</li>
+		</ul>
+		<div class="box">
+			<p>段落</p>
+			<p>段落</p>
+			<p>段落</p>
+			<b>加粗</b>
+			<b>加粗</b>
+			<b>加粗</b>
+		</div>
+	</body>
+</html>

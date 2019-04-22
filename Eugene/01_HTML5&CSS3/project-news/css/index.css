@@ -1,0 +1,325 @@
+@CHARSET "UTF-8";
+/* 公共样式  */
+.area{
+	width:1000px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.blank10{
+	margin-top:10px;
+}
+.blank20{
+	margin-top:20px;
+}
+.blank40{
+	margin-top:40px;
+}
+/* 头部 快速链接  */
+.head-link{
+	height:40px;
+	background:#F7F7F7;
+	border-top:3px solid #213E82;
+	border-bottom:1px solid #ccc;
+	line-height:40px;
+}
+.head-link .left{
+	float:left;
+	width:460px;
+	/* background:#ff0; */
+}
+.head-link .right{
+	float:right;
+	width:280px;
+	/* background:#0ff; */
+}
+.login-info{
+	float:left;
+	width:50px;
+	height:40px;
+	background:url(../images/top-nav-login-title.png);
+	text-align:center;
+}
+.login-info a{
+	display:block; /* 继承login-info的宽和高，实现背景图像的链接 */
+	color:#fff;
+}
+.other-info{
+	float:left;
+}
+.other-info a{
+	padding:0 8px 0 6px;
+}
+.blue{
+	color:#213E82;
+}
+/* 头部--logo样式  */
+.logo{
+	margin-top:10px;
+}
+.logo .left{
+	float:left;
+	width:180px;
+}
+.logo .right{
+	float:right;
+	width:300px;
+}
+.frm{
+	margin-top:30px;
+}
+.frm .key{
+	float:left;
+	width:246px;
+	height:28px;
+	background:url(../images/search-bar-keywords.png);
+	border:0;
+}
+.frm .btn{
+	float:left;
+	width:54px;
+	height:28px;
+	background:url(../images/search-bar-submit-button.png);
+	border:0;
+	text-indent:-9999px;
+	cursor:pointer;
+}
+/* 导航样式  */
+.navi{
+	width:100%;
+	height:42px;
+	background:#900;
+	line-height:42px;
+	margin-top:10px;
+}
+.navi li{
+	float:left;
+	font:bold 16px/42px 微软雅黑；
+}
+.navi a{
+	display:block;
+	padding:0 25px;
+	color:#fff;
+}
+.navi a:hover{
+	background:#500 url(../images/navigation-hover-bg.png) no-repeat center bottom;
+	text-decoration:none;
+}
+/* 版块1 样式 */
+.c1{
+	margin-top:10px;
+}
+.c1 .left{
+	float:left;
+	width:600px;
+	/* background:#ff0; */
+}
+.c1 .right{
+	float:right;
+	width:380px;
+	/* background:#0ff; */
+}
+.list-hot li{
+	line-height:24px;
+}
+.list-hot h3{
+	font:18px 微软雅黑;
+	padding:0 0 10px 0;
+	text-align:center;
+}
+.list-hot h3 a{
+	color:#213E82;
+}
+/* 版块2 c2样式  */
+.c2{
+	margin-top:10px;
+}
+.big-title{
+	height:28px;  /* 28+8=36 */
+	background:#213E82;
+	padding:8px 0 0 10px;
+}
+.big-title h3{
+	width:104px;
+	height:22px;
+	/* background:url(../images/china.png); */
+	text-indent:-9999px;
+}
+.big-title h3.china{
+	background:url(../images/china.png);
+}
+.big-title h3.world{
+	background:url(../images/world.png);
+}
+.big-title h3.photos{
+	background:url(../images/photos.png);
+}
+.c2 .left{
+	float:left;
+	width:340px;
+	margin-right:20px;
+	/* background:#ff0; */
+}
+.c2 .right{
+	float:right;
+	width:280px;
+	/* background:#0ff; */
+}
+.title1{
+	height:34px;
+	border-bottom:2px solid #ccc;
+}
+.title1 h3{
+	width:96px;
+	height:34px;
+	border-bottom:2px solid #213E82;
+	font:bold 16px/34px 微软雅黑;
+	/* padding:0 0 0 10px; */
+}
+.title1 a{
+	color:#213E82;
+}
+.title1 a span{
+	font:italic bold 18px 微软雅黑;
+	color:#900;
+	padding:0 4px 0 0;
+}
+.list1 li{
+	line-height:24px;
+	background:url(../images/section-part-list-bg.png) no-repeat left center;
+	padding-left:12px;
+}
+/* tab 选项卡样式  */
+.title2{
+	height:34px;
+	border-bottom:2px solid #ccc;
+}
+.title2 h3{
+	float:left;
+	width:96px;
+	height:34px;
+
+	font:bold 16px/34px 微软雅黑;
+}
+.title2 h3.cur{
+	border-bottom:2px solid #900;
+}
+.title2 a{
+	color:#213E82;
+}
+.list-content{
+	display:none;
+}
+.list-content li{
+	line-height:24px;
+	background:url(../images/section-part-list-bg.png) no-repeat left center;
+	padding-left:12px;
+}
+/* 版块3样式 */
+.pic-txt{
+	width:280px;
+	padding:6px 0;
+}
+.pic-txt img{
+	float:left;
+	margin-right:10px;
+}
+.pic-txt p{
+	line-height:22px;
+}
+/* 版块4样式  */
+.pic-pic{
+	border:2px solid #ccc;
+	padding:0 0 0 2px;
+}
+.pic-pic li{
+	float:left;
+	padding:10px 14px;
+}
+.pic-pic p{
+	line-height:24px;
+	text-align:center;
+}
+.pic-pic img{
+	width:220px;
+	height:147px;
+}
+/* 底部样式-友情链接样式  */
+.friend-info{
+	position:relative;
+	height:10px;
+	background:url(../images/0.png) 0 -308px;
+}
+.friend-link{
+	position:absolute;
+	left:430px;
+	top:-25px;
+	width:140px;
+	height:50px;
+	background:url(../images/0.png) 0 -365px;
+	text-indent:-9999px;
+}
+/* 焦点图轮播效果--左右滚动  */
+.focus-info{
+	position:relative;
+	width:600px;
+	height:320px;
+	overflow:hidden; /* 溢出隐藏  */
+}
+.focus-img{
+	width:1800px; /* 左右滚动足够宽  */
+	margin-left:-600px;
+}
+.focus-img li{
+	float:left;
+}
+.focus-box{
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;   /* 此处的width脱离文档流、不占位，无法继承父级的宽；因此必须写  */
+	height:45px;
+	background:#000;
+	opacity:.5;
+}
+.focus-text{
+	position:absolute;
+	left:10px;
+	bottom:0;
+	width:100%;
+	height:45px;
+	font:20px/45px 微软雅黑;
+	color:#fff;
+}
+.focus-btn{
+	position:absolute;
+	right:10px;
+	bottom:10px;
+}
+.focus-btn li{
+	float:left;
+	width:16px;
+	height:16px;
+	background:url(../images/0.png) -20px -250px;
+	margin:0 5px 0 0;
+}
+.focus-btn li.cur{
+	background-position:0 -250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

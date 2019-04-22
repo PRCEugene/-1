@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			ul,li{
+				border:1px solid #f00;
+			}
+			.list1{  /* disc 默认值 | square 方块 | circle 空心圆 | decimal 阿拉伯数字  */
+				list-style-type:decimal;
+			}
+			.list2{
+				list-style-image:url(images/dot.png);
+				list-style-position:inside;
+			}
+			.list3{
+				list-style:none;
+			}
+			.list3 li{
+				/* background:url(images/dot.png) no-repeat left center; */
+				background:url(images/dot.gif) no-repeat 0 -96px;
+				padding-left:16px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="list1">
+			<li><a href="#">习近平指挥“一带一路”交响乐之华彩篇</a></li>
+			<li><a href="#">习近平指挥“一带一路”交响乐之华彩篇</a></li>
+			<li><a href="#">习近平指挥“一带一路”交响乐之华彩篇</a></li>
+			<li><a href="#">习近平指挥“一带一路”交响乐之华彩篇</a></li>
+		</ul>
+		<ul class="list2">
+			<li><a href="#">习近平指挥“一带一路”交响乐之华彩篇</a></li>
+			<li><a href="#">习近平指挥“一带一路”交响乐之华彩篇</a></li>
+			<li><a href="#">习近平指挥“一带一路”交响乐之华彩篇</a></li>
+			<li><a href="#">习近平指挥“一带一路”交响乐之华彩篇</a></li>
+		</ul>
+		<ul class="list3">
+			<li><a href="#">习近平指挥“一带一路”交响乐之华彩篇</a></li>
+			<li><a href="#">习近平指挥“一带一路”交响乐之华彩篇</a></li>
+			<li><a href="#">习近平指挥“一带一路”交响乐之华彩篇</a></li>
+			<li><a href="#">习近平指挥“一带一路”交响乐之华彩篇</a></li>
+		</ul>
+	</body>
+</html>

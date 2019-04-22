@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			.box{
+				width:300px;
+				background:#f00;
+			}
+			.a1,.a2,.a3{
+				float:left;
+				width:80px;
+				height:50px;
+				background:#0f0;
+			}
+			.clear{
+				clear:both;
+			}
+			.list{
+				width:300px;
+				background:#ff0;
+			}
+			.list li{
+				float:left;
+				width:50px;
+				height:50px;
+				background:#00f;
+			}
+			.clearfix{
+				zoom:1;
+			}
+			.clearfix:after{
+				content:".";
+				clear:both;
+				display:block;
+				height:0;
+				visibility:hidden;
+			}
+		</style>
+	</head>
+	<body>
+	    <!-- 解决高度塌陷 方法一  -->
+		<div class="box">
+			<div class="a1">块元素1</div>
+			<div class="a2">块元素2</div>
+			<div class="a3">块元素3</div>
+			<div class="clear"></div>
+		</div>
+		 <!-- 解决高度塌陷 方法二 万能清除 也可以解决版块之间的划分界限  -->
+		<ul class="list clearfix">
+			<li>one</li>
+			<li>two</li>
+			<li>three</li>
+			<!-- <div class="clear"></div> --> <!-- 此代码在此处是错误标记，因为ul的子元素仅为li -->
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" href="css/reset.css"/>
+		<style>
+			.title{
+				width:460px;
+				height:40px;
+				background:#FEF6C1;
+				margin:50px auto 0;
+				line-height:40px;
+				padding:0 10px;
+			}
+			.title h3{ /* 左板块  */
+				float:left;
+				font:14px/40px 微软雅黑；
+			}
+			.title div{ /* 右板块  */
+				float:right;
+			}
+			.title span{
+				float:left;
+				/* display:block;--->因行元素不能设置宽和高，所以使用display；
+				 * 但此代码用float取代即可 —— 既可避免折行问题，又可兼顾margin； */
+				width:4px;
+				height:7px;
+				background:url(images/icon01.png) -94px -24px;
+				/* padding:16px 6px 0 0; --->撑大背景色块盒子，导致引用其他图像，不可取 */
+				margin:16px 6px 0 0;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 小版块标题  -->
+		<div class="title">
+			<h3>
+				<span></span><a href="#">财经</a>
+			</h3>
+			<div>
+				<a href="#">财经</a> |
+				<a href="#">股票</a> |
+				<a href="#">理财</a> |
+				<a href="#">宏观</a> |
+				<a href="#">招聘</a>
+			</div>
+		</div>
+	</body>
+</html>

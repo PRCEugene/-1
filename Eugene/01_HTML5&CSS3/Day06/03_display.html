@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			.div1{
+				display:inline;  /* 块元素转为行元素  */
+				width:100px;
+				height:100px;
+				background:#0f0;
+			}
+			.span1{
+				display:block;  /* 行元素转为块元素  */
+				width:100px;
+				height:100px;
+				background:#00f;
+			}
+			.list li{
+				/* float:left; */
+				display:inline-block;
+				width:80px;
+				height:80px;
+				background:#f0f;
+			}
+			.list li.cur{
+				/* display:none; */
+				visibility:hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">块元素</div>
+		<span class="span1">行元素</span>
+		
+		<ul class="list">
+			<li>one</li>
+			<li class="cur">two</li>
+			<li>three</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<h2>注册界面</h2>
+		<form action="demo.php" method="post" enctype="multipart/form-data" autocomplete="off">
+			<div>
+				<label>用户名称</label>
+				<input type="text" name="user" autocomplete="on" placeholder="请输入用户名" 
+				required="required" pattern="[A-z]{3,5}"/>
+			</div>
+			<div>
+				<label>密　　码</label>
+				<input type="password" name="pwd" placeholder="请输入密码"/>
+			</div>
+			<div>
+				<label>性　　别</label>
+				<input type="radio" name="sex" value="0" checked="checked"/>男
+				<input type="radio" name="sex" value="1"/>女
+				<input type="radio" name="sex" value="2"/>保密
+			</div>
+			<div>
+				<label>兴趣标签</label>
+				<input type="checkbox" name="tag[]" value="1" checked="checked"/>时尚
+				<input type="checkbox" name="tag[]" value="2" checked="checked"/>社会
+				<input type="checkbox" name="tag[]" value="3"/>历史
+				<input type="checkbox" name="tag[]" value="4"/>体育
+				<input type="checkbox" name="tag[]" value="5"/>政治
+				<input type="checkbox" name="tag[]" value="6"/>地理
+			</div>
+			<div>
+				<!-- 多选：select name="city[]" multiple="multiple" size="2" -->
+				<label>城　　市</label>
+				<select name="city">
+					<optgroup label="北方">
+						<option value="1">北京</option>
+						<option value="2">天津</option>
+				    </optgroup>	
+					<optgroup label="南方">
+						<option value="3">上海</option>
+						<option value="4" selected="selected">广州</option>
+					</optgroup>	
+				</select>
+			</div>
+			<!-- form标记上  enctype="multipart/form-data" -->
+			<div>
+				<label>个人照片</label>
+				<input type="file" name="pic[]" multiple="multiple"/>
+			</div>
+			<div>
+				<label>自我介绍</label>
+				<textarea name="info" rows="10" cols="50"></textarea>
+			</div>
+			<div>
+				<label>个人邮箱</label>
+		   <!-- <input type="text" name="email"/> -->
+				<input type="email" name="email" required="required" style="width:300px;height:50px"/>
+			</div>
+			<div>
+				<label>个人主页</label>
+				<input type="url" name="url" placeholder="请输入http://"/>
+			</div>
+			<div>
+				<!-- step 步长 -->
+				<label>年　　龄</label>
+				<input type="number" name="age" max="150" min="0" value="18" step="1"/> 
+			</div>
+			<div>
+				<label>搜关键字</label>
+				<input type="search" name="key"/>
+			</div>
+			<!--  Date pickers（date, month, week, time, datetime（欧洲时间）,
+			 datetime-local）  -->
+			<div>
+				<label>生　　日</label>
+				<input type="date" name="birthday"/>
+			</div>
+			<div>
+				<input type="hidden" name="id" value="5"/>
+				<input type="submit" value="注册"/>
+				<button>注册按钮</button>
+				<input type="button" value="普通按钮"/>
+				<input type="reset" value="重写"/>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

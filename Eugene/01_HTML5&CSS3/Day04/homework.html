@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			#list li{ /* 101 */
+					  color:#f00;
+			}
+			.list li{ /* 11 */
+	         		  color:#00f;
+			}
+			.list>li{ /* 11 */
+	        		  color:0f0;
+			}
+			h4 b em{
+					 color:#f00;
+			}
+			.box b{
+					color:#333;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+		     1.比较选择器优先级
+		         #list li （101）  .list li （11）
+		         .list li  .list>li
+		         h4 b em   .box b  （继承优先级最低） -->
+		
+		<ul id="list" class="list">
+			<li>one</li>
+			<li>two</li>
+			<li>three</li>
+		</ul>
+		<h4 class="box">
+			<b>
+				<em>内容</em>
+			</b>
+		</h4>
+		<!--
+		     2.超链接选择器（伪类选择器）
+			  （1） 页面统一超链接样式
+			     a 四个状态  灰字#333 去掉下滑线
+			     a:hover 设置  红色字#900 加下滑线
+			  （2）单独给‘央广网’加超链接样式
+			     a 四个状态  红色#f00 去掉下滑线
+			     a:hover 设置  绿色#0f0 加下滑线
+			 3.文本样式
+			    给  <span class="b1">中共中央总书记习近平</span>
+				  颜色蓝色半透明
+				 大小  30px
+				 微软雅黑
+				 加粗倾斜
+				 文本阴影  - 黑色阴影
+			 4.盒子模型
+			   （1）给  class名称b1  加  内边距padding
+			             左右  20像素
+		             （2）给  class名称ar 加
+		                        宽     550px
+		                        盒子水平居中               
+		 -->
+	</body>
+</html>

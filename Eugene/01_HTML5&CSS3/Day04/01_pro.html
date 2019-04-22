@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			div p{ /* 2 */
+					color:red;
+			}
+			#b1 p{ /* 101 */
+					color:blue;
+			}
+			.a1 p{ /* 11 */
+					color:green !important;
+					/* !important优先级最高 */
+			}
+			.a2 b{
+					color:yellow;
+			}
+			#b2{ /* 继承的优先级最低  */
+				  color:purple;
+			}
+			#table1{ /* 继承优先级最低 */
+					 color:red;
+			}
+			td{
+				color:blue;
+			}
+			tr{
+				color:green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="a1" id="b1">
+			<p style="color:gray">文本内容</p>
+		</div>
+		<h3 class="a2" id="b2">
+			<b>加粗文本</b>
+		</h3>
+		<table id="table1">
+			<tr>
+				<td>内容</td>
+			</tr>
+		</table>
+	</body>
+</html>
